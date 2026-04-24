@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BALENCIAGA — Clothing & Goods</title>
+  <meta name="description" content="Концепт-каталог Balenciaga: одежда, обувь, аксессуары и продуктовая линейка." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="#" class="logo">BALENCIAGA</a>
+      <nav class="nav__links">
+        <a href="#clothing">Clothing</a>
+        <a href="#shoes">Shoes</a>
+        <a href="#bags">Bags</a>
+        <a href="#goods">Goods</a>
+        <a href="#about">About</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn">
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">FW / 25 — DEMO STORE</p>
+      <h1 class="hero__title">SHAPING<br/>THE FUTURE<br/>OF FASHION.</h1>
+      <p class="hero__sub">Концептуальный каталог одежды, обуви и предметов в фирменной эстетике Balenciaga. Демо-проект для портфолио.</p>
+      <div class="hero__cta">
+        <a href="#clothing" class="btn btn--primary">SHOP COLLECTION</a>
+        <a href="#about" class="btn btn--ghost">LEARN MORE</a>
+      </div>
+    </div>
+    <div class="hero__marquee">
+      <div class="marquee__track">
+        <span>BALENCIAGA</span><span>•</span>
+        <span>PARIS</span><span>•</span>
+        <span>FW25</span><span>•</span>
+        <span>READY TO WEAR</span><span>•</span>
+        <span>BALENCIAGA</span><span>•</span>
+        <span>PARIS</span><span>•</span>
+        <span>FW25</span><span>•</span>
+        <span>READY TO WEAR</span><span>•</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="clothing" class="section">
+      <div class="section__head">
+        <h2>CLOTHING</h2>
+        <p>Oversized silhouettes, raw finishings, structural tailoring.</p>
+      </div>
+      <div class="grid" data-grid="clothing"></div>
+    </section>
+
+    <section id="shoes" class="section section--alt">
+      <div class="section__head">
+        <h2>SHOES</h2>
+        <p>From Triple S to destroyed sneakers — iconic footwear.</p>
+      </div>
+      <div class="grid" data-grid="shoes"></div>
+    </section>
+
+    <section id="bags" class="section">
+      <div class="section__head">
+        <h2>BAGS</h2>
+        <p>City, Hourglass, Le Cagole — house signatures.</p>
+      </div>
+      <div class="grid" data-grid="bags"></div>
+    </section>
+
+    <section id="goods" class="section section--alt">
+      <div class="section__head">
+        <h2>GOODS</h2>
+        <p>Объекты повседневности, переосмысленные домом.</p>
+      </div>
+      <div class="grid" data-grid="goods"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about__inner">
+        <h2>ABOUT THE PROJECT</h2>
+        <p>
+          Это демонстрационный сайт, созданный как концепт в эстетике Balenciaga.
+          Все товары и цены — вымышленные и используются исключительно в учебно-портфолио целях.
+          Сайт построен на чистом HTML, CSS и JavaScript — никаких сборок, фреймворков и зависимостей.
+        </p>
+        <p class="about__meta">© <span id="year"></span> Demo Concept · Not affiliated with Balenciaga.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="logo">BALENCIAGA</div>
+      <div class="footer__cols">
+        <div>
+          <h4>Shop</h4>
+          <a href="#clothing">Clothing</a>
+          <a href="#shoes">Shoes</a>
+          <a href="#bags">Bags</a>
+          <a href="#goods">Goods</a>
+        </div>
+        <div>
+          <h4>Info</h4>
+          <a href="#about">About</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__bottom">DEMO PROJECT · NOT AN OFFICIAL STORE</p>
+  </footer>
+
+  <!-- Cart drawer -->
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__overlay" data-close></div>
+    <div class="drawer__panel">
+      <div class="drawer__head">
+        <h3>YOUR CART</h3>
+        <button class="drawer__close" data-close>×</button>
+      </div>
+      <div class="drawer__body" id="cartItems"></div>
+      <div class="drawer__foot">
+        <div class="drawer__total"><span>Total</span><span id="cartTotal">$0</span></div>
+        <button class="btn btn--primary btn--block" onclick="alert('Demo only — checkout disabled.')">CHECKOUT</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="./app.js"></script>
+</body>
+</html>
